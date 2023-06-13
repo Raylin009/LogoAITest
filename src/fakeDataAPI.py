@@ -1,12 +1,15 @@
 import requests
-from __init__ import writeToFirebase
-# Make an API request
-response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
+from firebase import writeToFirebase
 
-# Check if the request was successful (status code 200)
-if response.status_code == 200:
-    # Parse the response as JSON
-    data = response.json()
-    writeToFirebase('users', 'user8', data)
-else:
-    print('Request failed with status code', response.status_code)
+def getFakeData (list, number):
+    response = requests.get(f"https://jsonplaceholder.typicode.com/{list}/{number}")
+    if response.status_code == 200:
+        data = response.json()
+        return data
+        # writeToFirebase('users', 'user8', data)
+    else:
+        raise requests.exceptions.HTTPError(f"GET request failed with status code {response.status_code}")
+        # print('Request failed with status code', response.status_code)
+
+
+# print(getFakeData('todos', 1))
