@@ -47,3 +47,11 @@ Next step on Feature
 
 ***Don't forget to "source logoAITest/bin/activate" You can get out by "deactivate"
 
+To Run app:
+  1 clone repo
+  2 create a "firebaseServiceAccountKey.json" file and paste firebase credential
+  3 run terminal command "source logoAITest/bin/activate"
+  4 run python3 app.py
+    you should see a "pass" print out in the terminal the data writen in the firestore
+
+
