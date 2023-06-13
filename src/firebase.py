@@ -1,6 +1,5 @@
 import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import firestore
+from firebase_admin import credentials, firestore
 import os
 
 cred_path = os.path.abspath(os.path.join(__file__,'..','../firebaseServiceAccountKey.json'))
@@ -17,4 +16,3 @@ def getDataFromFirebase (collection, document):
     retrieved_data = doc_ref.get().to_dict()
     return retrieved_data
     
-# print (getDataFromFirebase('users', 'user8'))

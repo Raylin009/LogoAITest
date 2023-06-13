@@ -31,17 +31,19 @@ Plan:
 - Can get data from JASONplaceholder.com
 - Can write to firebase
 Next Step
-- Change file name from __init--.py to __initi__py
-- Relocate security key from desk top download to firebaseServiceAccountKey.json
-- Refector getFakeData to independent function
-- Seperate function and file more apporopreately
+- [Done] Change file name from __init--.py to __initi__py
+- [Done] Relocate security key from desk top download to firebaseServiceAccountKey.json
+- [Done] Refector getFakeData to independent function
+- [Done] Seperate function and file more apporopreately
 Next step on Feature
-- Connect fake data to database
+- [Done] Connect fake data to database
 
 0613/2023 12:12pm
 - Problem: relative path to firebaseServiceAccountKey.json not valid. I found out that In python, relative paths are resolved based on the current working directory. which means depending on the directory you run the function from, the relative path changes.
   Solution: https://towardsthecloud.com/get-relative-path-python#:~:text=A%20relative%20path%20starts%20with,path%20to%20the%20file%20want.
   use os to find absolut path.
+  
+- Can retrieve data from firebase
 
 ***Don't forget to "source logoAITest/bin/activate" You can get out by "deactivate"
 

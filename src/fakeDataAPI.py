@@ -1,5 +1,4 @@
 import requests
-from firebase import writeToFirebase
 
 def getFakeData (list, number):
     response = requests.get(f"https://jsonplaceholder.typicode.com/{list}/{number}")
@@ -12,4 +11,4 @@ def getFakeData (list, number):
         # print('Request failed with status code', response.status_code)
 
 
-# print(getFakeData('todos', 1))
+# print(getFakeData('posts'))
