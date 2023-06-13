@@ -12,3 +12,12 @@ if response.status_code == 200:
     print(data)
 else:
     print('Request failed with status code', response.status_code)
+
+
+import firebase_admin
+from firebase_admin import credentials
+
+path = '/Users/raylin/Downloads/logoaitest-firebase-adminsdk-o1d6z-93ce0f5148.json'
+
+cred = credentials.Certificate(path)
+firebase_admin.initialize_app(cred)
