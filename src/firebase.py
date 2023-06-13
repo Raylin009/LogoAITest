@@ -11,3 +11,10 @@ db = firestore.client()
 def writeToFirebase (collection, document, data):
     doc_ref = db.collection(collection).document(document)
     doc_ref.set(data)
+
+def getDataFromFirebase (collection, document):
+    doc_ref = db.collection(collection).document(document)
+    retrieved_data = doc_ref.get().to_dict()
+    return retrieved_data
+    
+# print (getDataFromFirebase('users', 'user8'))
