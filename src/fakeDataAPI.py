@@ -1,5 +1,5 @@
 import requests
-
+from __init__ import writeToFirebase
 # Make an API request
 response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
 
@@ -7,17 +7,6 @@ response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
 if response.status_code == 200:
     # Parse the response as JSON
     data = response.json()
-
-    # Extract and process the required data
-    print(data)
+    writeToFirebase('users', 'user8', data)
 else:
     print('Request failed with status code', response.status_code)
-
-
-import firebase_admin
-from firebase_admin import credentials
-
-path = '/Users/raylin/Downloads/logoaitest-firebase-adminsdk-o1d6z-93ce0f5148.json'
-
-cred = credentials.Certificate(path)
-firebase_admin.initialize_app(cred)
