@@ -1,6 +1,6 @@
+from test import test_data_in_firestore
 from fakeDataAPI import getFakeData
 from firebase import writeToFirebase
-from test import test_data_in_firestore
 
 def main (query, id):
   doc = f'{query}{id}'
@@ -8,5 +8,7 @@ def main (query, id):
   writeToFirebase(query, doc, data)
   test_data_in_firestore([query, doc], data)
 
-main('posts', 6)
+if __name__ == '__main__':
+  main('posts', 6)
 
+  
