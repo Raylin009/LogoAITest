@@ -54,4 +54,8 @@ To Run app:
   4 run python3 app.py
     you should see a "pass" print out in the terminal the data writen in the firestore
 
+06/20/2023
+resources for python unit testing 
+https://www.youtube.com/watch?v=6tNS--WetLI&t=1802s&ab_channel=CoreySchafer
+
 
