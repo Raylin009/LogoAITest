@@ -1,6 +1,6 @@
 import requests
 
-def getFakeData (list, number):
+def get_data_from_placeholder (list, number):
     response = requests.get(f"https://jsonplaceholder.typicode.com/{list}/{number}")
     if response.status_code == 200:
         data = response.json()
