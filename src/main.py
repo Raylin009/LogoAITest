@@ -1,6 +1,6 @@
 from test import test_data_in_firestore
-from fakeDataAPI import get_data_from_placeholder
-from firebase import write_to_firestore
+from placeholderAPI_service import get_data_from_placeholder
+from firebase_service import write_to_firestore
 
 def main (query, id):
   doc = f'{query}{id}'

@@ -1,5 +1,5 @@
-from firebase import get_data_from_firestore, write_to_firestore
-from fakeDataAPI import get_data_from_placeholder
+from firebase_service import get_data_from_firestore, write_to_firestore
+from placeholderAPI_service import get_data_from_placeholder
 import unittest
 
 class TestWriteToDatabase(unittest.TestCase): 
