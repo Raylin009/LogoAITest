@@ -9,6 +9,6 @@ def main (query, id):
   test_data_in_firestore([query, doc], data)
 
 if __name__ == '__main__':
-  main('posts', 6)
+  main('posts', 7)
 
   

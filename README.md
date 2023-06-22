@@ -58,4 +58,8 @@ To Run app:
 resources for python unit testing 
 https://www.youtube.com/watch?v=6tNS--WetLI&t=1802s&ab_channel=CoreySchafer
 
+06/21/2023
+Question 1: I ran into the problem of initiallzing firestore multiple times when testing firestore connection. how to get around that?
+Question 2: what actually hapen when I return setdata(data) in write_data_to_firestore? 
+
 
