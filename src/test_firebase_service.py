@@ -13,7 +13,6 @@ class FirebaseConnectionTest(unittest.TestCase):
             cls.sample_data = json.load(file)
 
     def test_firebase_connection(self):
-
         try:
             collections = firebase_service.db.collections()
         except Exception as error:
@@ -27,5 +26,3 @@ class FirebaseConnectionTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-    
